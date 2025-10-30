@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - YNWARYN Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header dengan Dropdown -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">YR</div>
+                    <h1 class="company-name">YNWARYN CREATIVE STUDIO</h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="vision.html">Visi Misi</a></li>
+                        <li><a href="services.html">Produk Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Articles Hero Section -->
+    <section class="articles-hero">
+        <div class="container">
+            <h1>Artikel & Insight</h1>
+            <p>Update terbaru seputar desain, teknologi, dan strategi kreatif</p>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem; color: var(--primary-dark);">Artikel Terbaru</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Berbagi pengetahuan dan pengalaman dari tim YNWARYN</p>
+
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <a href="articles.html" class="category-btn active">Semua</a>
+                <a href="articles.html?category=design" class="category-btn">Desain</a>
+                <a href="articles.html?category=technology" class="category-btn">Teknologi</a>
+                <a href="articles.html?category=marketing" class="category-btn">Marketing</a>
+                <a href="articles.html?category=business" class="category-btn">Bisnis</a>
+                <a href="articles.html?category=multimedia" class="category-btn">Multimedia</a>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Artikel akan ditampilkan di sini (sama seperti sebelumnya) -->
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(45deg, #667eea, #764ba2); color: white;">
+                        🎨
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Desain</span>
+                            <span>📅 15 Nov 2024</span>
+                        </div>
+                        <h3 class="article-title">Mengapa Branding Visual Penting untuk Bisnis di Era Digital</h3>
+                        <p class="article-excerpt">
+                            Di era digital yang kompetitif, branding visual bukan lagi sekadar pilihan tapi kebutuhan. 
+                            Temukan bagaimana identitas visual yang kuat dapat membedakan bisnis Anda...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">⏱️ 5 min read</span>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(45deg, #4facfe, #00f2fe); color: white;">
+                        💻
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Teknologi</span>
+                            <span>📅 10 Nov 2024</span>
+                        </div>
+                        <h3 class="article-title">Tren Desain Web 2025: Apa yang Perlu Dipersiapkan?</h3>
+                        <p class="article-excerpt">
+                            Eksplorasi tren desain web yang akan dominan di tahun 2025 dan bagaimana mempersiapkan 
+                            website Anda untuk tetap relevan dan kompetitif...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">⏱️ 4 min read</span>
+                            <a href="#" class="read-more">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tambahkan artikel lainnya... -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Design by: Karyn Marchya Putri</p>
+            <p>&copy; 2024 PT. YNWARYN CREATIVE STUDIO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

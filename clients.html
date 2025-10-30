@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klien Kami - YNWARYN Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">YR</div>
+                    <h1 class="company-name">YNWARYN CREATIVE STUDIO</h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="vision.html">Visi Misi</a></li>
+                        <li><a href="services.html">Produk Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clients Hero Section -->
+    <section class="clients-hero">
+        <div class="container">
+            <h1>Klien Kami</h1>
+            <p>Perusahaan-perusahaan yang telah mempercayai kreativitas dan solusi digital YNWARYN</p>
+        </div>
+    </section>
+
+    <!-- Clients Stats -->
+    <section class="clients-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Klien Aktif</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Project Selesai</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Tingkat Kepuasan</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Industri Berbeda</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Portfolio -->
+    <section class="clients-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem; color: var(--primary-dark);">Portfolio Klien</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">Beberapa project yang telah kami kerjakan bersama partner bisnis</p>
+            
+            <div class="clients-filters">
+                <button class="client-filter-btn active" data-filter="all">Semua</button>
+                <button class="client-filter-btn" data-filter="fashion">Fashion & Beauty</button>
+                <button class="client-filter-btn" data-filter="fitness">Health & Fitness</button>
+                <button class="client-filter-btn" data-filter="food">Food & Beverage</button>
+                <button class="client-filter-btn" data-filter="tech">Technology</button>
+                <button class="client-filter-btn" data-filter="education">Education</button>
+            </div>
+
+            <div class="clients-grid" id="clientsGrid">
+                <!-- KopiNusa -->
+                <div class="client-card" data-category="food">
+                    <div class="client-header">
+                        <div class="client-logo">KN</div>
+                        <h3 class="client-name">KopiNusa</h3>
+                        <div class="client-industry">UMKM / Food & Beverage</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Brand Identity</span>
+                            <h4 class="project-title">Rebranding & Packaging Design</h4>
+                            <p class="project-description">Membangun identitas visual yang kuat untuk brand kopi lokal dengan sentuhan modern dan elemen budaya Indonesia.</p>
+                            <div class="project-duration">
+                                <span>📅</span> 2 Bulan (Jan - Mar 2023)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"YNWARYN berhasil menangkap esensi brand kami dan mengubahnya menjadi identitas visual yang memorable. Penjualan meningkat 40% setelah rebranding!"</p>
+                            <div class="testimonial-author">- Founder KopiNusa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TechNova ID -->
+                <div class="client-card" data-category="tech">
+                    <div class="client-header">
+                        <div class="client-logo">TN</div>
+                        <h3 class="client-name">TechNova ID</h3>
+                        <div class="client-industry">Startup Technology</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Web Development</span>
+                            <h4 class="project-title">Company Website & Dashboard</h4>
+                            <p class="project-description">Mengembangkan website perusahaan dan admin dashboard dengan UX yang intuitif dan performa optimal.</p>
+                            <div class="project-duration">
+                                <span>📅</span> 3 Bulan (Feb - Apr 2023)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"Tim YNWARYN sangat professional dan responsive. Website yang mereka buat tidak hanya cantik tetapi juga sangat functional."</p>
+                            <div class="testimonial-author">- CTO TechNova ID</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EduBridge Academy -->
+                <div class="client-card" data-category="education">
+                    <div class="client-header">
+                        <div class="client-logo">EA</div>
+                        <h3 class="client-name">EduBridge Academy</h3>
+                        <div class="client-industry">Education Technology</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Web System</span>
+                            <h4 class="project-title">E-Learning Platform</h4>
+                            <p class="project-description">Membangun platform pembelajaran online dengan fitur video conference, quiz, dan progress tracking.</p>
+                            <div class="project-duration">
+                                <span>📅</span> 4 Bulan (Mar - Jun 2023)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"Platform yang user-friendly dan scalable. Siswa dan pengajar sangat terbantu dengan sistem yang dikembangkan YNWARYN."</p>
+                            <div class="testimonial-author">- Director EduBridge Academy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aurea Beauty -->
+                <div class="client-card" data-category="fashion">
+                    <div class="client-header">
+                        <div class="client-logo">AB</div>
+                        <h3 class="client-name">Aurea Beauty</h3>
+                        <div class="client-industry">Beauty & Cosmetics</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Digital Marketing</span>
+                            <h4 class="project-title">Social Media Management</h4>
+                            <p class="project-description">Strategi konten dan management social media untuk meningkatkan engagement dan brand awareness.</p>
+                            <div class="project-duration">
+                                <span>📅</span> Ongoing (Sejak Mei 2024)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"Engagement Instagram kami meningkat 300% dalam 3 bulan pertama. Kontennya selalu fresh dan sesuai target audience."</p>
+                            <div class="testimonial-author">- Marketing Manager Aurea Beauty</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GreenLiving Co. -->
+                <div class="client-card" data-category="fitness">
+                    <div class="client-header">
+                        <div class="client-logo">GL</div>
+                        <h3 class="client-name">GreenLiving Co.</h3>
+                        <div class="client-industry">Lifestyle & Wellness</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Digital Campaign</span>
+                            <h4 class="project-title">Eco for Future Campaign</h4>
+                            <p class="project-description">Kampanye digital untuk meningkatkan awareness tentang sustainable living dan produk ramah lingkungan.</p>
+                            <div class="project-duration">
+                                <span>📅</span> 2 Bulan (Apr - Mei 2024)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"Kampanye yang sangat impactful! Berhasil menjangkau audience yang tepat dan meningkatkan conversions."</p>
+                            <div class="testimonial-author">- Campaign Manager GreenLiving</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NexaSoft -->
+                <div class="client-card" data-category="tech">
+                    <div class="client-header">
+                        <div class="client-logo">NS</div>
+                        <h3 class="client-name">NexaSoft</h3>
+                        <div class="client-industry">IT Consulting</div>
+                    </div>
+                    <div class="client-content">
+                        <div class="client-project">
+                            <span class="project-type">Corporate Branding</span>
+                            <h4 class="project-title">Visual Identity & Website</h4>
+                            <p class="project-description">Membangun corporate identity yang professional dan website yang mencerminkan kredibilitas perusahaan.</p>
+                            <div class="project-duration">
+                                <span>📅</span> 2.5 Bulan (Mei - Jul 2024)
+                            </div>
+                        </div>
+                        <div class="client-testimonial">
+                            <p class="testimonial-text">"Proses kerja yang sangat terstruktur dan hasil yang beyond expectation. Highly recommended!"</p>
+                            <div class="testimonial-author">- CEO NexaSoft</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <h2 style="color: var(--primary-dark); margin-bottom: 1rem;">Jaringan Partnership</h2>
+            <p style="color: var(--text-light); max-width: 600px; margin: 0 auto 2rem;">Kami bangga bermitra dengan berbagai perusahaan dan organisasi terpercaya</p>
+            
+            <div class="partnership-grid">
+                <div class="partner-logo">Digital Creative Association</div>
+                <div class="partner-logo">Startup Indonesia</div>
+                <div class="partner-logo">Tech Community</div>
+                <div class="partner-logo">Creative Hub</div>
+                <div class="partner-logo">Business Network</div>
+                <div class="partner-logo">Innovation Center</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Jadilah Bagian dari Kesuksesan Kami</h2>
+            <p>Mari berkolaborasi untuk menciptakan solusi kreatif yang membawa bisnis Anda ke level berikutnya</p>
+            <button class="btn-partner" onclick="location.href='contact.html'">Mulai Partnership</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Design by: Karyn Marchya Putri</p>
+            <p>&copy; 2024 PT. YNWARYN CREATIVE STUDIO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Clients Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.client-filter-btn');
+            const clientCards = document.querySelectorAll('.client-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    clientCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Add animation on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe client cards for animation
+            clientCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

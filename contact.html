@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - YNWARYN Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">YR</div>
+                    <h1 class="company-name">YNWARYN CREATIVE STUDIO</h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="vision.html">Visi Misi</a></li>
+                        <li><a href="services.html">Produk Kami</a></li>
+                        <li><a href="contact.html" class="active">Kontak</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Mari berdiskusi tentang project kreatif Anda bersama tim YNWARYN</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 style="color: var(--primary-dark); margin-bottom: 2rem;">Informasi Kontak</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Alamat Kantor</h3>
+                            <p>Jl. Kampus UNSRAT Bahu, Manado<br>Sulawesi Utara, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p>(012) 3456 7890</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@ynwarynstudio.id</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h3>Website</h3>
+                            <p>www.ynwarynstudio.id</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 09:00 - 17:00 WITA<br>Sabtu: 09:00 - 14:00 WITA</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">📸</a>
+                        <a href="#" class="social-link" title="LinkedIn">💼</a>
+                        <a href="#" class="social-link" title="Facebook">👥</a>
+                        <a href="#" class="social-link" title="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 style="color: var(--primary-dark); margin-bottom: 2rem;">Kirim Pesan</h2>
+                    <form id="contactForm" action="process-contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Perusahaan</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Layanan yang Diminati *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Pilih Layanan</option>
+                                <option value="branding">Brand Identity Design</option>
+                                <option value="web">Web & App Development</option>
+                                <option value="marketing">Digital Marketing</option>
+                                <option value="multimedia">Multimedia Production</option>
+                                <option value="consultation">Creative Consultation</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Project</label>
+                            <select id="budget" name="budget">
+                                <option value="">Pilih Budget</option>
+                                <option value="1-5">Rp 1-5 Juta</option>
+                                <option value="5-10">Rp 5-10 Juta</option>
+                                <option value="10-25">Rp 10-25 Juta</option>
+                                <option value="25+">Rp 25 Juta+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" placeholder="Ceritakan tentang project yang Anda rencanakan..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-dark);">Lokasi Kami</h2>
+            <div class="map-container">
+                <!-- Placeholder untuk Google Maps -->
+                <div style="width: 100%; height: 400px; background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: var(--text-light);">
+                    🗺️ Peta Google Maps akan ditampilkan di sini
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Design by: Karyn Marchya Putri</p>
+            <p>&copy; 2024 PT. YNWARYN CREATIVE STUDIO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form handling untuk contact page
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Simulasi pengiriman
+            submitBtn.textContent = 'Mengirim...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Terima kasih! Pesan Anda telah berhasil dikirim. Tim kami akan menghubungi Anda dalam 1x24 jam.');
+                this.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

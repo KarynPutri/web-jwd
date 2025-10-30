@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - YNWARYN Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">YR</div>
+                    <h1 class="company-name">YNWARYN CREATIVE STUDIO</h1>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="vision.html">Visi Misi</a></li>
+                        <li><a href="services.html">Produk Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>Gallery Dokumentasi</h1>
+            <p>Momen berharga dan karya terbaik dari perjalanan kreatif YNWARYN</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="event">Event & Workshop</button>
+                <button class="filter-btn" data-filter="project">Project Klien</button>
+                <button class="filter-btn" data-filter="team">Kegiatan Tim</button>
+                <button class="filter-btn" data-filter="office">Kantor & Fasilitas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Event & Workshop Items -->
+                <div class="gallery-item" data-category="event">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📅</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Event</span>
+                        <h3 class="gallery-title">YNWARYN Design Week 2024</h3>
+                        <p class="gallery-date">15 Januari 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="event">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #f093fb, #f5576c); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎓</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Workshop</span>
+                        <h3 class="gallery-title">Branding Workshop for Startups</h3>
+                        <p class="gallery-date">2 Februari 2024</p>
+                    </div>
+                </div>
+
+                <!-- Project Klien Items -->
+                <div class="gallery-item" data-category="project">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #4facfe, #00f2fe); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">☕</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Project</span>
+                        <h3 class="gallery-title">KopiNusa Brand Launch</h3>
+                        <p class="gallery-date">10 Maret 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="project">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #43e97b, #38f9d7); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌱</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Project</span>
+                        <h3 class="gallery-title">GreenLiving Campaign</h3>
+                        <p class="gallery-date">22 Maret 2024</p>
+                    </div>
+                </div>
+
+                <!-- Kegiatan Tim Items -->
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #fa709a, #fee140); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💻</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tim</span>
+                        <h3 class="gallery-title">Brainstorming Session</h3>
+                        <p class="gallery-date">5 April 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #a8edea, #fed6e3); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎉</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tim</span>
+                        <h3 class="gallery-title">Team Building Activity</h3>
+                        <p class="gallery-date">18 April 2024</p>
+                    </div>
+                </div>
+
+                <!-- Kantor & Fasilitas Items -->
+                <div class="gallery-item" data-category="office">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #cd9cf2, #f6f3ff); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🏢</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Kantor</span>
+                        <h3 class="gallery-title">Creative Workspace</h3>
+                        <p class="gallery-date">1 Mei 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="office">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #ffecd2, #fcb69f); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🎨</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Fasilitas</span>
+                        <h3 class="gallery-title">Design Studio Setup</h3>
+                        <p class="gallery-date">12 Mei 2024</p>
+                    </div>
+                </div>
+
+                <!-- Additional Items -->
+                <div class="gallery-item" data-category="event">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #ff9a9e, #fecfef); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">📱</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Event</span>
+                        <h3 class="gallery-title">Tech Innovation Summit</h3>
+                        <p class="gallery-date">25 Mei 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="project">
+                    <div class="gallery-image" style="background: linear-gradient(45deg, #a1c4fd, #c2e9fb); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">💄</div>
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Project</span>
+                        <h3 class="gallery-title">Aurea Beauty Campaign</h3>
+                        <p class="gallery-date">8 Juni 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <div class="lightbox-nav">
+            <button class="lightbox-prev" id="lightboxPrev">❮</button>
+            <button class="lightbox-next" id="lightboxNext">❯</button>
+        </div>
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Design by: Karyn Marchya Putri</p>
+            <p>&copy; 2024 PT. YNWARYN CREATIVE STUDIO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxCaption = document.getElementById('lightboxCaption');
+            const lightboxClose = document.getElementById('lightboxClose');
+            const lightboxPrev = document.getElementById('lightboxPrev');
+            const lightboxNext = document.getElementById('lightboxNext');
+
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Lightbox functionality
+            let currentIndex = 0;
+            const items = Array.from(galleryItems);
+
+            function openLightbox(index) {
+                const item = items[index];
+                const title = item.querySelector('.gallery-title').textContent;
+                const category = item.querySelector('.gallery-category').textContent;
+                const date = item.querySelector('.gallery-date').textContent;
+                
+                // For demo purposes, we'll use the gradient background as image
+                // In real implementation, you would use actual image URLs
+                lightboxImage.style.background = item.querySelector('.gallery-image').style.background;
+                lightboxImage.style.display = 'flex';
+                lightboxImage.style.alignItems = 'center';
+                lightboxImage.style.justifyContent = 'center';
+                lightboxImage.style.color = 'white';
+                lightboxImage.style.fontSize = '4rem';
+                lightboxImage.innerHTML = item.querySelector('.gallery-image').innerHTML;
+                
+                lightboxCaption.textContent = `${title} - ${category} (${date})`;
+                currentIndex = index;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            function showNext() {
+                currentIndex = (currentIndex + 1) % items.length;
+                openLightbox(currentIndex);
+            }
+
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                openLightbox(currentIndex);
+            }
+
+            // Event listeners for lightbox
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => openLightbox(index));
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxNext.addEventListener('click', showNext);
+            lightboxPrev.addEventListener('click', showPrev);
+
+            // Close lightbox on outside click
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'Escape') closeLightbox();
+                    if (e.key === 'ArrowRight') showNext();
+                    if (e.key === 'ArrowLeft') showPrev();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
